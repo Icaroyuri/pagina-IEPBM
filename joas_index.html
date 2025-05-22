@@ -1,34 +1,26 @@
-<!DOCTYPE html>
-<html>
+<html lang='pt-br'>
   <head>
     <title>Cadastro do aluno</title>
     <style>
       mark {
         background-color:white;
-        color:rgb(255, 0, 0)
+        color:red
       }
     </style>
   </head>
   <body>
-    <section>
-      <h3>Observações:</h3>
-      <ul>
-        <li>ESCREVER NOME PESSOAL INTEIRO EM CAIXA ALTA(TUDO MAIÚSCULO) E SEM ACENTUAÇÕES;</li>
-        <li><mark>* SIGNIFICA OBRIGATÓRIO.</mark></li>
-      </ul>
-    </section>
-    <form action='URL_DO_OUTRO_DOCUMENTO' method='post'>
+    <form method='post' action>
+      <fieldset name='dados_cadastrais'>
+        <legend>DADOS CADASTRAIS</legend>
       <fieldset name='filiacao'>
-        <legend>FILIAÇÃO</legend>
-        <label>Nome completo do pai<mark>*</mark>:</label>
-        <input type='text' name='nome_do_pai' pattern='[A-Z]{13,30}' required><br><br>
-        <label>Nome completo da mãe:<mark>*</mark></label>
-        <input type='text' name='nome_da_mae' pattern='[A-Z]{13,30}' required>
-      </fieldset><br>
-      <fieldset name='dados_pessoais'>
-        <legend>DADOS PESSOAIS</legend>
+        <legend>NOME DO ALUNO E FILIAÇÃO</legend>
         <label>Nome do(a) aluno(a)<mark>*</mark>:</label>
-        <input type='text' name='nome_do_aluno' pattern='[A-Z]{13,30}' required><br><br>
+        <input type='text' name='nome_do_aluno' pattern='[A-Za-z]{13,30}' required><br><br>
+        <label>Nome completo do pai<mark>*</mark>:</label>
+        <input type='text' name='nome_do_pai' pattern='[A-Za-z]{13,30}' required><br><br>
+        <label>Nome completo da mãe<mark>*</mark>:</label>
+        <input type='text' name='nome_da_mae' pattern='[A-Za-z]{13,30}' required>
+      </fieldset><br><br>
         <label>Data de nascimento<mark>*</mark>:</label>
         <input type='date' name='data_de_nascimento' required><br><br>
         <label>País natal:</label>
@@ -52,38 +44,25 @@
             <option>Outro</option>
           </select>
           </select><br><br>
-        <label>E-mail:</label>
-        <input type='email'><br><br>
-        <label>Número de telefone com DDD:</label>
-        <input type='tel' pattern='[0-9]{11}'>
+        <label>Número de telefone com DDD<mark>*</mark>:</label>
+        <input type='tel' pattern='[0-9]{11}' required><br><br><br>
         <fieldset name='sexo_do_aluno' id='sexodoaluno'>
-          <legend>SEXO</legend>
-          <input type='radio' name='sexo' value='Feminino' id='feminino'>
+          <legend>SEXO<mark>*</mark></legend>
+          <input type='radio' name='sexo' value='Feminino' id='feminino' required>
           <label for='feminino'>Feminino</label>
-          <input type='radio' name='sexo' value='Masculino' id='masculino'>
+          <input type='radio' name='sexo' value='Masculino' id='masculino' required>
           <label for='masculino'>Masculino</label>
-          <input type='radio' name='sexo' value='Prefiro não dizer' id='prefiro_nao_dizer' checked>
-          <label for='prefiro_nao_dizer'>Prefiro não dizer</label><br><br>
-        </fieldset>
-      </fieldset><br>
-      <fieldset name='dados_documentais' id='dadosdocumentais'>
-        <legend>DADOS DOCUMENTAIS</legend>
+        </fieldset><br><br>
         <label>RG<mark>*</mark>:</label>
         <input type='text' pattern='[0-9]{4,11}' required><br><br>
         <label>CPF<mark>*</mark>:</label>
         <input type='text' pattern='[0-9]{11}' required><br><br>
-        <label></label>
-        <fieldset>
-          <legend>ENDEREÇO</legend>
-          <label>Bairro<mark>*</mark>:</label>
-          <input type='text' pattern='[a-zA-Z]{4,15}' required><br><br>
-          <label>Rua<mark>*</mark>:</label>
-          <input type='text' pattern='[a-zA-Z0-9]{14,50}' required><br><br>
-          <label>CEP<mark>*</mark>:</label>
-          <input type='text' pattern='[0-9]{8}' required><br><br>
-          <label>Logradouro da casa:</label>
-          <input type='text' pattern='[0-9]{1,5}'>
-        </fieldset>
+        <label>Rua<mark>*</mark>:</label>
+        <input type='text' pattern='[a-zA-Z0-9]{14,50}' required><br><br>
+        <label>CEP<mark>*</mark>:</label>
+        <input type='text' pattern='[0-9]{8}'><br><br>
+        <label>Logradouro da casa<mark>*</mark>:</label>
+        <input type='text' pattern='[0-9]{1,5}' required><br>
       </fieldset><br>
       <input type='submit' value='ENVIAR' id='enviar'>
       <input type='reset' value='APAGAR TUDO' id='resetar'>
