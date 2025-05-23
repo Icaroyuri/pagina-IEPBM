@@ -1,0 +1,492 @@
+<html>
+
+<head>
+    <title> Portal do Aluno</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo-portal.css">
+</head>
+
+<body>
+    <div class="barra-lateral">
+        <h2>Portal do Aluno</h2>
+        <a href="portal-inicio.html">Início</a>
+        <a href="portal-agenda.html">Agenda</a>
+        <a href="portal-disciplinas.html">Disciplinas</a>
+        <a href="portal-horarios.html">Horários</a>
+        <a href="portal-notas.html">Notas</a>
+        <a href="portal-professores.html">Professores</a>
+    </div>
+    <div class="topo">
+        <header>
+            <div class="alinhamento">
+                <img src="imagem/logo IEBM - Editado.png" class="alinhamento-img">
+                <div class="nome-escola">
+                    <h1>Instituto Educacinal Professora Bernadete Marinho</h1>
+                    <h2>Educação, Humanizada e Transformadora</h2>
+                </div>
+            </div>
+            <div class="alinhamento-usuario">
+                <img src="imagem/avatar.png" class="usuario-img">
+                <div>
+                    <h4>Usuário</h4>
+                </div>
+            </div>
+        </header>
+
+        <input type="radio" name="month" id="janeiro" />
+        <input type="radio" name="month" id="fevereiro" />
+        <input type="radio" name="month" id="marco" />
+        <input type="radio" name="month" id="abril" />
+        <input type="radio" name="month" id="maio" />
+        <input type="radio" name="month" id="junho" />
+        <input type="radio" name="month" id="julho" />
+        <input type="radio" name="month" id="agosto" />
+        <input type="radio" name="month" id="setembro" />
+        <input type="radio" name="month" id="outubro" />
+        <input type="radio" name="month" id="novembro" />
+        <input type="radio" name="month" id="dezembro" />
+
+        <div class="month-selector">
+            <label for="janeiro">Janeiro 2025</label>
+            <label for="fevereiro">Fevereiro 2025</label>
+            <label for="marco">Março 2025</label>
+            <label for="abril">Abril 2025</label>
+            <label for="maio">Maio 2025</label>
+            <label for="junho">Junho 2025</label>
+            <label for="julho">Julho 2025</label>
+            <label for="agosto">Agosto 2025</label>
+            <label for="setembro">Setembro 2025</label>
+            <label for="outubro">Outubro 2025</label>
+            <label for="novembro">Novembro 2025</label>
+            <label for="dezembro">Dezembro 2025</label>
+        </div>
+
+        <div class="month-display">
+            <span id="month-name-janeiro">Janeiro 2025</span>
+            <span id="month-name-fevereiro">Fevereiro 2025</span>
+            <span id="month-name-marco">Março 2025</span>
+            <span id="month-name-abril">Abril 2025</span>
+            <span id="month-name-maio">Maio 2025</span>
+            <span id="month-name-junho">Junho 2025</span>
+            <span id="month-name-julho">Julho 2025</span>
+            <span id="month-name-agosto">Agosto 2025</span>
+            <span id="month-name-setembro">Setembro 2025</span>
+            <span id="month-name-outubro">Outubro 2025</span>
+            <span id="month-name-novembro">Novembro 2025</span>
+            <span id="month-name-dezembro">Dezembro 2025</span>
+        </div>
+
+        <div class="calendar-container">
+            <div class="calendar" id="calendar-janeiro">
+                <div class="day"><a href="#popup">1</a></div>
+                <div class="day"><a href="#popup">2</a></div>
+                <div class="day"><a href="#popup">3</a></div>
+                <div class="day"><a href="#popup">4</a></div>
+                <div class="day"><a href="#popup">5</a></div>
+                <div class="day"><a href="#popup">6</a></div>
+                <div class="day"><a href="#popup">7</a></div>
+                <div class="day"><a href="#popup">8</a></div>
+                <div class="day"><a href="#popup">9</a></div>
+                <div class="day"><a href="#popup">10</a></div>
+                <div class="day"><a href="#popup">11</a></div>
+                <div class="day"><a href="#popup">12</a></div>
+                <div class="day"><a href="#popup">13</a></div>
+                <div class="day"><a href="#popup">14</a></div>
+                <div class="day"><a href="#popup">15</a></div>
+                <div class="day"><a href="#popup">16</a></div>
+                <div class="day"><a href="#popup">17</a></div>
+                <div class="day"><a href="#popup">18</a></div>
+                <div class="day"><a href="#popup">19</a></div>
+                <div class="day"><a href="#popup">20</a></div>
+                <div class="day"><a href="#popup">21</a></div>
+                <div class="day"><a href="#popup">22</a></div>
+                <div class="day"><a href="#popup">23</a></div>
+                <div class="day"><a href="#popup">24</a></div>
+                <div class="day"><a href="#popup">25</a></div>
+                <div class="day"><a href="#popup">26</a></div>
+                <div class="day"><a href="#popup">27</a></div>
+                <div class="day"><a href="#popup">28</a></div>
+                <div class="day"><a href="#popup">29</a></div>
+                <div class="day"><a href="#popup">30</a></div>
+                <div class="day"><a href="#popup">31</a></div>
+            </div>
+
+            <div class="calendar" id="calendar-fevereiro">
+                <div class="day"><a href="#popup">1</a></div>
+                <div class="day"><a href="#popup">2</a></div>
+                <div class="day"><a href="#popup">3</a></div>
+                <div class="day"><a href="#popup">4</a></div>
+                <div class="day"><a href="#popup">5</a></div>
+                <div class="day"><a href="#popup">6</a></div>
+                <div class="day"><a href="#popup">7</a></div>
+                <div class="day"><a href="#popup">8</a></div>
+                <div class="day"><a href="#popup">9</a></div>
+                <div class="day"><a href="#popup">10</a></div>
+                <div class="day"><a href="#popup">11</a></div>
+                <div class="day"><a href="#popup">12</a></div>
+                <div class="day"><a href="#popup">13</a></div>
+                <div class="day"><a href="#popup">14</a></div>
+                <div class="day"><a href="#popup">15</a></div>
+                <div class="day"><a href="#popup">16</a></div>
+                <div class="day"><a href="#popup">17</a></div>
+                <div class="day"><a href="#popup">18</a></div>
+                <div class="day"><a href="#popup">19</a></div>
+                <div class="day"><a href="#popup">20</a></div>
+                <div class="day"><a href="#popup">21</a></div>
+                <div class="day"><a href="#popup">22</a></div>
+                <div class="day"><a href="#popup">23</a></div>
+                <div class="day"><a href="#popup">24</a></div>
+                <div class="day"><a href="#popup">25</a></div>
+                <div class="day"><a href="#popup">26</a></div>
+                <div class="day"><a href="#popup">27</a></div>
+                <div class="day"><a href="#popup">28</a></div>
+            </div>
+
+            <div class="calendar" id="calendar-marco">
+                <div class="day"><a href="#popup">1</a></div>
+                <div class="day"><a href="#popup">2</a></div>
+                <div class="day"><a href="#popup">3</a></div>
+                <div class="day"><a href="#popup">4</a></div>
+                <div class="day"><a href="#popup">5</a></div>
+                <div class="day"><a href="#popup">6</a></div>
+                <div class="day"><a href="#popup">7</a></div>
+                <div class="day"><a href="#popup">8</a></div>
+                <div class="day"><a href="#popup">9</a></div>
+                <div class="day"><a href="#popup">10</a></div>
+                <div class="day"><a href="#popup">11</a></div>
+                <div class="day"><a href="#popup">12</a></div>
+                <div class="day"><a href="#popup">13</a></div>
+                <div class="day"><a href="#popup">14</a></div>
+                <div class="day"><a href="#popup">15</a></div>
+                <div class="day"><a href="#popup">16</a></div>
+                <div class="day"><a href="#popup">17</a></div>
+                <div class="day"><a href="#popup">18</a></div>
+                <div class="day"><a href="#popup">19</a></div>
+                <div class="day"><a href="#popup">20</a></div>
+                <div class="day"><a href="#popup">21</a></div>
+                <div class="day"><a href="#popup">22</a></div>
+                <div class="day"><a href="#popup">23</a></div>
+                <div class="day"><a href="#popup">24</a></div>
+                <div class="day"><a href="#popup">25</a></div>
+                <div class="day"><a href="#popup">26</a></div>
+                <div class="day"><a href="#popup">27</a></div>
+                <div class="day"><a href="#popup">28</a></div>
+                <div class="day"><a href="#popup">29</a></div>
+                <div class="day"><a href="#popup">30</a></div>
+                <div class="day"><a href="#popup">31</a></div>
+            </div>
+
+            <div class="calendar" id="calendar-abril">
+                <div class="day"><a href="#popup">1</a></div>
+                <div class="day"><a href="#popup">2</a></div>
+                <div class="day"><a href="#popup">3</a></div>
+                <div class="day"><a href="#popup">4</a></div>
+                <div class="day"><a href="#popup">5</a></div>
+                <div class="day"><a href="#popup">6</a></div>
+                <div class="day"><a href="#popup">7</a></div>
+                <div class="day"><a href="#popup">8</a></div>
+                <div class="day"><a href="#popup">9</a></div>
+                <div class="day"><a href="#popup">10</a></div>
+                <div class="day"><a href="#popup">11</a></div>
+                <div class="day"><a href="#popup">12</a></div>
+                <div class="day"><a href="#popup">13</a></div>
+                <div class="day"><a href="#popup">14</a></div>
+                <div class="day"><a href="#popup">15</a></div>
+                <div class="day"><a href="#popup">16</a></div>
+                <div class="day"><a href="#popup">17</a></div>
+                <div class="day"><a href="#popup">18</a></div>
+                <div class="day"><a href="#popup">19</a></div>
+                <div class="day"><a href="#popup">20</a></div>
+                <div class="day"><a href="#popup">21</a></div>
+                <div class="day"><a href="#popup">22</a></div>
+                <div class="day"><a href="#popup">23</a></div>
+                <div class="day"><a href="#popup">24</a></div>
+                <div class="day"><a href="#popup">25</a></div>
+                <div class="day"><a href="#popup">26</a></div>
+                <div class="day"><a href="#popup">27</a></div>
+                <div class="day"><a href="#popup">28</a></div>
+                <div class="day"><a href="#popup">29</a></div>
+                <div class="day"><a href="#popup">30</a></div>
+            </div>
+
+            <div class="calendar" id="calendar-maio">
+                <div class="day"><a href="#popup">1</a></div>
+                <div class="day"><a href="#popup">2</a></div>
+                <div class="day"><a href="#popup">3</a></div>
+                <div class="day"><a href="#popup">4</a></div>
+                <div class="day"><a href="#popup">5</a></div>
+                <div class="day"><a href="#popup">6</a></div>
+                <div class="day"><a href="#popup">7</a></div>
+                <div class="day"><a href="#popup">8</a></div>
+                <div class="day"><a href="#popup">9</a></div>
+                <div class="day"><a href="#popup">10</a></div>
+                <div class="day"><a href="#popup">11</a></div>
+                <div class="day"><a href="#popup">12</a></div>
+                <div class="day"><a href="#popup">13</a></div>
+                <div class="day"><a href="#popup">14</a></div>
+                <div class="day"><a href="#popup">15</a></div>
+                <div class="day"><a href="#popup">16</a></div>
+                <div class="day"><a href="#popup">17</a></div>
+                <div class="day"><a href="#popup">18</a></div>
+                <div class="day"><a href="#popup">19</a></div>
+                <div class="day"><a href="#popup">20</a></div>
+                <div class="day"><a href="#popup">21</a></div>
+                <div class="day"><a href="#popup">22</a></div>
+                <div class="day"><a href="#popup">23</a></div>
+                <div class="day"><a href="#popup">24</a></div>
+                <div class="day"><a href="#popup">25</a></div>
+                <div class="day"><a href="#popup">26</a></div>
+                <div class="day"><a href="#popup">27</a></div>
+                <div class="day"><a href="#popup">28</a></div>
+                <div class="day"><a href="#popup">29</a></div>
+                <div class="day"><a href="#popup">30</a></div>
+                <div class="day"><a href="#popup">31</a></div>
+            </div>
+
+            <div class="calendar" id="calendar-junho">
+                <div class="day"><a href="#popup">1</a></div>
+                <div class="day"><a href="#popup">2</a></div>
+                <div class="day"><a href="#popup">3</a></div>
+                <div class="day"><a href="#popup">4</a></div>
+                <div class="day"><a href="#popup">5</a></div>
+                <div class="day"><a href="#popup">6</a></div>
+                <div class="day"><a href="#popup">7</a></div>
+                <div class="day"><a href="#popup">8</a></div>
+                <div class="day"><a href="#popup">9</a></div>
+                <div class="day"><a href="#popup">10</a></div>
+                <div class="day"><a href="#popup">11</a></div>
+                <div class="day"><a href="#popup">12</a></div>
+                <div class="day"><a href="#popup">13</a></div>
+                <div class="day"><a href="#popup">14</a></div>
+                <div class="day"><a href="#popup">15</a></div>
+                <div class="day"><a href="#popup">16</a></div>
+                <div class="day"><a href="#popup">17</a></div>
+                <div class="day"><a href="#popup">18</a></div>
+                <div class="day"><a href="#popup">19</a></div>
+                <div class="day"><a href="#popup">20</a></div>
+                <div class="day"><a href="#popup">21</a></div>
+                <div class="day"><a href="#popup">22</a></div>
+                <div class="day"><a href="#popup">23</a></div>
+                <div class="day"><a href="#popup">24</a></div>
+                <div class="day"><a href="#popup">25</a></div>
+                <div class="day"><a href="#popup">26</a></div>
+                <div class="day"><a href="#popup">27</a></div>
+                <div class="day"><a href="#popup">28</a></div>
+                <div class="day"><a href="#popup">29</a></div>
+                <div class="day"><a href="#popup">30</a></div>
+            </div>
+
+            <div class="calendar" id="calendar-julho">
+                <div class="day"><a href="#popup">1</a></div>
+                <div class="day"><a href="#popup">2</a></div>
+                <div class="day"><a href="#popup">3</a></div>
+                <div class="day"><a href="#popup">4</a></div>
+                <div class="day"><a href="#popup">5</a></div>
+                <div class="day"><a href="#popup">6</a></div>
+                <div class="day"><a href="#popup">7</a></div>
+                <div class="day"><a href="#popup">8</a></div>
+                <div class="day"><a href="#popup">9</a></div>
+                <div class="day"><a href="#popup">10</a></div>
+                <div class="day"><a href="#popup">11</a></div>
+                <div class="day"><a href="#popup">12</a></div>
+                <div class="day"><a href="#popup">13</a></div>
+                <div class="day"><a href="#popup">14</a></div>
+                <div class="day"><a href="#popup">15</a></div>
+                <div class="day"><a href="#popup">16</a></div>
+                <div class="day"><a href="#popup">17</a></div>
+                <div class="day"><a href="#popup">18</a></div>
+                <div class="day"><a href="#popup">19</a></div>
+                <div class="day"><a href="#popup">20</a></div>
+                <div class="day"><a href="#popup">21</a></div>
+                <div class="day"><a href="#popup">22</a></div>
+                <div class="day"><a href="#popup">23</a></div>
+                <div class="day"><a href="#popup">24</a></div>
+                <div class="day"><a href="#popup">25</a></div>
+                <div class="day"><a href="#popup">26</a></div>
+                <div class="day"><a href="#popup">27</a></div>
+                <div class="day"><a href="#popup">28</a></div>
+                <div class="day"><a href="#popup">29</a></div>
+                <div class="day"><a href="#popup">30</a></div>
+                <div class="day"><a href="#popup">31</a></div>
+            </div>
+
+<div class="calendar" id="calendar-agosto">
+                <div class="day"><a href="#popup">1</a></div>
+                <div class="day"><a href="#popup">2</a></div>
+                <div class="day"><a href="#popup">3</a></div>
+                <div class="day"><a href="#popup">4</a></div>
+                <div class="day"><a href="#popup">5</a></div>
+                <div class="day"><a href="#popup">6</a></div>
+                <div class="day"><a href="#popup">7</a></div>
+                <div class="day"><a href="#popup">8</a></div>
+                <div class="day"><a href="#popup">9</a></div>
+                <div class="day"><a href="#popup">10</a></div>
+                <div class="day"><a href="#popup">11</a></div>
+                <div class="day"><a href="#popup">12</a></div>
+                <div class="day"><a href="#popup">13</a></div>
+                <div class="day"><a href="#popup">14</a></div>
+                <div class="day"><a href="#popup">15</a></div>
+                <div class="day"><a href="#popup">16</a></div>
+                <div class="day"><a href="#popup">17</a></div>
+                <div class="day"><a href="#popup">18</a></div>
+                <div class="day"><a href="#popup">19</a></div>
+                <div class="day"><a href="#popup">20</a></div>
+                <div class="day"><a href="#popup">21</a></div>
+                <div class="day"><a href="#popup">22</a></div>
+                <div class="day"><a href="#popup">23</a></div>
+                <div class="day"><a href="#popup">24</a></div>
+                <div class="day"><a href="#popup">25</a></div>
+                <div class="day"><a href="#popup">26</a></div>
+                <div class="day"><a href="#popup">27</a></div>
+                <div class="day"><a href="#popup">28</a></div>
+                <div class="day"><a href="#popup">29</a></div>
+                <div class="day"><a href="#popup">30</a></div>
+                <div class="day"><a href="#popup">31</a></div>
+            </div>
+
+            <div class="calendar" id="calendar-setembro">
+                <div class="day"><a href="#popup">1</a></div>
+                <div class="day"><a href="#popup">2</a></div>
+                <div class="day"><a href="#popup">3</a></div>
+                <div class="day"><a href="#popup">4</a></div>
+                <div class="day"><a href="#popup">5</a></div>
+                <div class="day"><a href="#popup">6</a></div>
+                <div class="day"><a href="#popup">7</a></div>
+                <div class="day"><a href="#popup">8</a></div>
+                <div class="day"><a href="#popup">9</a></div>
+                <div class="day"><a href="#popup">10</a></div>
+                <div class="day"><a href="#popup">11</a></div>
+                <div class="day"><a href="#popup">12</a></div>
+                <div class="day"><a href="#popup">13</a></div>
+                <div class="day"><a href="#popup">14</a></div>
+                <div class="day"><a href="#popup">15</a></div>
+                <div class="day"><a href="#popup">16</a></div>
+                <div class="day"><a href="#popup">17</a></div>
+                <div class="day"><a href="#popup">18</a></div>
+                <div class="day"><a href="#popup">19</a></div>
+                <div class="day"><a href="#popup">20</a></div>
+                <div class="day"><a href="#popup">21</a></div>
+                <div class="day"><a href="#popup">22</a></div>
+                <div class="day"><a href="#popup">23</a></div>
+                <div class="day"><a href="#popup">24</a></div>
+                <div class="day"><a href="#popup">25</a></div>
+                <div class="day"><a href="#popup">26</a></div>
+                <div class="day"><a href="#popup">27</a></div>
+                <div class="day"><a href="#popup">28</a></div>
+                <div class="day"><a href="#popup">29</a></div>
+                <div class="day"><a href="#popup">30</a></div>
+            </div>
+
+            <div class="calendar" id="calendar-outubro">
+                <div class="day"><a href="#popup">1</a></div>
+                <div class="day"><a href="#popup">2</a></div>
+                <div class="day"><a href="#popup">3</a></div>
+                <div class="day"><a href="#popup">4</a></div>
+                <div class="day"><a href="#popup">5</a></div>
+                <div class="day"><a href="#popup">6</a></div>
+                <div class="day"><a href="#popup">7</a></div>
+                <div class="day"><a href="#popup">8</a></div>
+                <div class="day"><a href="#popup">9</a></div>
+                <div class="day"><a href="#popup">10</a></div>
+                <div class="day"><a href="#popup">11</a></div>
+                <div class="day"><a href="#popup">12</a></div>
+                <div class="day"><a href="#popup">13</a></div>
+                <div class="day"><a href="#popup">14</a></div>
+                <div class="day"><a href="#popup">15</a></div>
+                <div class="day"><a href="#popup">16</a></div>
+                <div class="day"><a href="#popup">17</a></div>
+                <div class="day"><a href="#popup">18</a></div>
+                <div class="day"><a href="#popup">19</a></div>
+                <div class="day"><a href="#popup">20</a></div>
+                <div class="day"><a href="#popup">21</a></div>
+                <div class="day"><a href="#popup">22</a></div>
+                <div class="day"><a href="#popup">23</a></div>
+                <div class="day"><a href="#popup">24</a></div>
+                <div class="day"><a href="#popup">25</a></div>
+                <div class="day"><a href="#popup">26</a></div>
+                <div class="day"><a href="#popup">27</a></div>
+                <div class="day"><a href="#popup">28</a></div>
+                <div class="day"><a href="#popup">29</a></div>
+                <div class="day"><a href="#popup">30</a></div>
+                <div class="day"><a href="#popup">31</a></div>
+            </div>
+
+            <div class="calendar" id="calendar-novembro">
+                <div class="day"><a href="#popup">1</a></div>
+                <div class="day"><a href="#popup">2</a></div>
+                <div class="day"><a href="#popup">3</a></div>
+                <div class="day"><a href="#popup">4</a></div>
+                <div class="day"><a href="#popup">5</a></div>
+                <div class="day"><a href="#popup">6</a></div>
+                <div class="day"><a href="#popup">7</a></div>
+                <div class="day"><a href="#popup">8</a></div>
+                <div class="day"><a href="#popup">9</a></div>
+                <div class="day"><a href="#popup">10</a></div>
+                <div class="day"><a href="#popup">11</a></div>
+                <div class="day"><a href="#popup">12</a></div>
+                <div class="day"><a href="#popup">13</a></div>
+                <div class="day"><a href="#popup">14</a></div>
+                <div class="day"><a href="#popup">15</a></div>
+                <div class="day"><a href="#popup">16</a></div>
+                <div class="day"><a href="#popup">17</a></div>
+                <div class="day"><a href="#popup">18</a></div>
+                <div class="day"><a href="#popup">19</a></div>
+                <div class="day"><a href="#popup">20</a></div>
+                <div class="day"><a href="#popup">21</a></div>
+                <div class="day"><a href="#popup">22</a></div>
+                <div class="day"><a href="#popup">23</a></div>
+                <div class="day"><a href="#popup">24</a></div>
+                <div class="day"><a href="#popup">25</a></div>
+                <div class="day"><a href="#popup">26</a></div>
+                <div class="day"><a href="#popup">27</a></div>
+                <div class="day"><a href="#popup">28</a></div>
+                <div class="day"><a href="#popup">29</a></div>
+                <div class="day"><a href="#popup">30</a></div>
+            </div>
+
+            <div class="calendar" id="calendar-dezembro">
+                <div class="day"><a href="#popup">1</a></div>
+                <div class="day"><a href="#popup">2</a></div>
+                <div class="day"><a href="#popup">3</a></div>
+                <div class="day"><a href="#popup">4</a></div>
+                <div class="day"><a href="#popup">5</a></div>
+                <div class="day"><a href="#popup">6</a></div>
+                <div class="day"><a href="#popup">7</a></div>
+                <div class="day"><a href="#popup">8</a></div>
+                <div class="day"><a href="#popup">9</a></div>
+                <div class="day"><a href="#popup">10</a></div>
+                <div class="day"><a href="#popup">11</a></div>
+                <div class="day"><a href="#popup">12</a></div>
+                <div class="day"><a href="#popup">13</a></div>
+                <div class="day"><a href="#popup">14</a></div>
+                <div class="day"><a href="#popup">15</a></div>
+                <div class="day"><a href="#popup">16</a></div>
+                <div class="day"><a href="#popup">17</a></div>
+                <div class="day"><a href="#popup">18</a></div>
+                <div class="day"><a href="#popup">19</a></div>
+                <div class="day"><a href="#popup">20</a></div>
+                <div class="day"><a href="#popup">21</a></div>
+                <div class="day"><a href="#popup">22</a></div>
+                <div class="day"><a href="#popup">23</a></div>
+                <div class="day"><a href="#popup">24</a></div>
+                <div class="day"><a href="#popup">25</a></div>
+                <div class="day"><a href="#popup">26</a></div>
+                <div class="day"><a href="#popup">27</a></div>
+                <div class="day"><a href="#popup">28</a></div>
+                <div class="day"><a href="#popup">29</a></div>
+                <div class="day"><a href="#popup">30</a></div>
+                <div class="day"><a href="#popup">31</a></div>
+            </div>
+
+        </div>
+
+        <div class="popup-section">
+            <div class="popup" id="popup">
+                <h4>Avisos dia </h4>
+                <p>Nenhum aviso cadastrado.</p>
+                <a href="#">Fechar</a>
+            </div>
+</body>
+
+</html>
