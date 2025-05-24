@@ -105,12 +105,13 @@
         text-decoration: none;
         color: #2c3e50;
         font-weight: bold;
-        background-color:  #ccc;
+        background-color: #ccc;
         border: none;
         padding: 10px 16px;
         border-radius: 5px;
         cursor: pointer;
     }
+
     .card-button:hover {
         background-color: #bbb;
     }
@@ -267,29 +268,41 @@
 
 
 
-     .formato-tab {
-      max-width: 900px;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    .formato-tab {
+        max-width: 900px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
 
-    table {
+    .tabela-notas {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    .centralizar {
+        color: #2c3e50;
+        text-align: center;
+    }
+
+    .tabela-horario {
       width: 100%;
       border-collapse: collapse;
       margin-top: 20px;
     }
-    th, td {
+
+     th, td {
       padding: 12px;
-      border-bottom: 1px solid #ddd;
+      border: 1px solid #ddd;
       text-align: center;
     }
     th {
       background-color: #ecf0f1;
       color: #2c3e50;
     }
-    tr:hover {
+    tr:hover td {
       background-color: #f1f1f1;
     }
