@@ -13,6 +13,7 @@
         background-color: rgb(12, 12, 184);
         color: white;
         padding: 20px;
+
     }
 
     .barra-lateral h2 {
@@ -105,7 +106,7 @@
         text-decoration: none;
         color: #2c3e50;
         font-weight: bold;
-        background-color: #ccc;
+        background-color: #ecf0f1;
         border: none;
         padding: 10px 16px;
         border-radius: 5px;
@@ -289,20 +290,66 @@
     }
 
     .tabela-horario {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
     }
 
-     th, td {
-      padding: 12px;
-      border: 1px solid #ddd;
-      text-align: center;
+    th,
+    td {
+        padding: 12px;
+        border: 1px solid #ddd;
+        text-align: center;
     }
+
     th {
-      background-color: #ecf0f1;
-      color: #2c3e50;
+        background-color: #ecf0f1;
+        color: #2c3e50;
     }
+
     tr:hover td {
-      background-color: #f1f1f1;
+        background-color: #f1f1f1;
+    }
+
+
+    .content {
+        padding: 120px 20px 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .disciplina {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .disciplina h3 {
+        background-color: #ecf0f1;
+        padding: 10px;
+        border-radius: 5px;
+        color: #2c3e50;
+        margin-top: 0;
+    }
+
+    ul {
+        list-style-type: disc;
+        padding-left: 20px;
+    }
+
+    .subtitulo {
+        margin-top: 10px;
+        font-weight: bold;
+        color: #34495e;
+    }
+
+    @media (max-width: 1000px) {
+        .content {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
