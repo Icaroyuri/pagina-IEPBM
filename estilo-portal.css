@@ -85,14 +85,14 @@
         gap: 20px;
     }
 
-    .card {
+    .card-documentos {
         background-color: white;
         padding: 20px;
         border-radius: 10px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
-    .card-documentos {
+    .card {
         background-color: white;
         padding: 20px;
         border-radius: 10px;
@@ -224,7 +224,7 @@
     .popup a {
         display: inline-block;
         margin-top: 10px;
-        background-color: #ccc;
+        background-color: #ecf0f1;
         color: #333;
         text-decoration: none;
         padding: 6px 12px;
@@ -312,7 +312,7 @@
     }
 
 
-    .content {
+    .cont-disciplina {
         padding: 120px 20px 20px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -352,4 +352,42 @@
         .content {
             grid-template-columns: repeat(2, 1fr);
         }
+    }
+
+    .cont-professor {
+      padding: 120px 20px 20px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .professor {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    .professor h3 {
+      margin-top: 0;
+      color: #2c3e50;
+    }
+
+    .email {
+      color: #34495e;
+      font-size: 0.95em;
+    }
+
+    @media (max-width: 900px) {
+      .cont-professor {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .cont-professor {
+        grid-template-columns: 1fr;
+      }
     }
