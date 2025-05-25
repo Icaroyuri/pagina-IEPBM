@@ -1,0 +1,393 @@
+    body {
+        display: flex;
+        height: 100%;
+        background-color: #f4f6f8;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    .barra-lateral {
+        width: 220px;
+        background-color: rgb(12, 12, 184);
+        color: white;
+        padding: 20px;
+
+    }
+
+    .barra-lateral h2 {
+        margin-bottom: 30px;
+    }
+
+    .barra-lateral a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        margin: 15px 0;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .barra-lateral a:hover {
+        background-color: rgb(8, 8, 141);
+    }
+
+    .topo {
+        flex: 1;
+        padding: 20px;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(12, 12, 184);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .alinhamento {
+        display: flex;
+        align-items: center;
+    }
+
+    .alinhamento-img {
+        height: 100px;
+        margin-right: 15px;
+    }
+
+    .nome-escola {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .alinhamento-usuario {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-direction: row-reverse;
+        font-size: 20px;
+    }
+
+    .usuario-img {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border: 2px solid white;
+    }
+
+    .formato {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+    }
+
+    .card-documentos {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .card {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        grid-column: span 2;
+    }
+
+    .card-button {
+        display: inline-block;
+        margin-top: 10px;
+        text-decoration: none;
+        color: #2c3e50;
+        font-weight: bold;
+        background-color: #ecf0f1;
+        border: none;
+        padding: 10px 16px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .card-button:hover {
+        background-color: #bbb;
+    }
+
+
+
+
+
+
+    .month-selector {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+        gap: 10px;
+    }
+
+    .month-selector label {
+        background-color: rgb(12, 12, 184);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        user-select: none;
+        transition: background-color 0.3s;
+    }
+
+    .month-selector label:hover {
+        background-color: rgb(8, 8, 141);
+    }
+
+    input[name="month"] {
+        display: none;
+    }
+
+    #janeiro:checked~.month-display #month-name-janeiro,
+    #fevereiro:checked~.month-display #month-name-fevereiro,
+    #marco:checked~.month-display #month-name-marco,
+    #abril:checked~.month-display #month-name-abril,
+    #maio:checked~.month-display #month-name-maio,
+    #junho:checked~.month-display #month-name-junho,
+    #julho:checked~.month-display #month-name-julho,
+    #agosto:checked~.month-display #month-name-agosto,
+    #setembro:checked~.month-display #month-name-setembro,
+    #outubro:checked~.month-display #month-name-outubro,
+    #novembro:checked~.month-display #month-name-novembro,
+    #dezembro:checked~.month-display #month-name-dezembro {
+        display: block;
+    }
+
+    .month-display span {
+        display: none;
+        font-weight: bold;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .calendar {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 10px;
+        padding: 20px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .day {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        text-align: center;
+        cursor: pointer;
+        position: relative;
+        user-select: none;
+    }
+
+    .day a {
+        color: inherit;
+        text-decoration: none;
+        font-weight: bold;
+        display: block;
+    }
+
+    .day:hover {
+        background-color: #ecf0f1;
+    }
+
+    .popup-section {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .popup {
+        display: none;
+    }
+
+    .popup:target {
+        display: block;
+    }
+
+    .popup h4 {
+        margin-top: 0;
+    }
+
+    .popup a {
+        display: inline-block;
+        margin-top: 10px;
+        background-color: #ecf0f1;
+        color: #333;
+        text-decoration: none;
+        padding: 6px 12px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .popup a:hover {
+        background-color: #bbb;
+    }
+
+    #janeiro:checked~.calendar-container #calendar-janeiro,
+    #fevereiro:checked~.calendar-container #calendar-fevereiro,
+    #marco:checked~.calendar-container #calendar-marco,
+    #abril:checked~.calendar-container #calendar-abril,
+    #maio:checked~.calendar-container #calendar-maio,
+    #junho:checked~.calendar-container #calendar-junho,
+    #julho:checked~.calendar-container #calendar-julho,
+    #agosto:checked~.calendar-container #calendar-agosto,
+    #setembro:checked~.calendar-container #calendar-setembro,
+    #outubro:checked~.calendar-container #calendar-outubro,
+    #novembro:checked~.calendar-container #calendar-novembro,
+    #dezembro:checked~.calendar-container #calendar-dezembro {
+        display: grid;
+    }
+
+    #janeiro:not(:checked)~.calendar-container #calendar-janeiro,
+    #fevereiro:not(:checked)~.calendar-container #calendar-fevereiro,
+    #marco:not(:checked)~.calendar-container #calendar-marco,
+    #abril:not(:checked)~.calendar-container #calendar-abril,
+    #maio:not(:checked)~.calendar-container #calendar-maio,
+    #junho:not(:checked)~.calendar-container #calendar-junho,
+    #julho:not(:checked)~.calendar-container #calendar-julho,
+    #agosto:not(:checked)~.calendar-container #calendar-agosto,
+    #setembro:not(:checked)~.calendar-container #calendar-setembro,
+    #outubro:not(:checked)~.calendar-container #calendar-outubro,
+    #novembro:not(:checked)~.calendar-container #calendar-novembro,
+    #dezembro:not(:checked)~.calendar-container #calendar-dezembro {
+        display: none;
+    }
+
+
+
+    .formato-tab {
+        max-width: 900px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .tabela-notas {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    .centralizar {
+        color: #2c3e50;
+        text-align: center;
+    }
+
+    .tabela-horario {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    th,
+    td {
+        padding: 12px;
+        border: 1px solid #ddd;
+        text-align: center;
+    }
+
+    th {
+        background-color: #ecf0f1;
+        color: #2c3e50;
+    }
+
+    tr:hover td {
+        background-color: #f1f1f1;
+    }
+
+
+    .cont-disciplina {
+        padding: 120px 20px 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .disciplina {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .disciplina h3 {
+        background-color: #ecf0f1;
+        padding: 10px;
+        border-radius: 5px;
+        color: #2c3e50;
+        margin-top: 0;
+    }
+
+    ul {
+        list-style-type: disc;
+        padding-left: 20px;
+    }
+
+    .subtitulo {
+        margin-top: 10px;
+        font-weight: bold;
+        color: #34495e;
+    }
+
+    @media (max-width: 1000px) {
+        .content {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .cont-professor {
+      padding: 120px 20px 20px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .professor {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    .professor h3 {
+      margin-top: 0;
+      color: #2c3e50;
+    }
+
+    .email {
+      color: #34495e;
+      font-size: 0.95em;
+    }
+
+    @media (max-width: 900px) {
+      .cont-professor {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .cont-professor {
+        grid-template-columns: 1fr;
+      }
+    }
