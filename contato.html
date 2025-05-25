@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+
     <!-- topo da pagina com logotipo e lema -->
+
     <header class="header">
       <div class="logo">
         <img src="imagem/logo IEBM - Editado.png" width="61px" />
@@ -21,63 +23,66 @@
 
     <!-- Menu de navegação da pagina-->
 
-   <nav class="barnav">
-      <a href="index.html">Início</a>
-      <a href="aescola.html">A Escola</a>
-      <a href="metodologia.html">Metodologia</a>
-      <a href="login.html">Login</a>
-      <a href="turmas.html">Turmas</a>
-      <a href="contato.html">Contato</a>             
+    <nav class="barnav">
+        <a href="index.html">Início</a>
+        <a href="aescola.html">A Escola</a>
+        <a href="metodologia.html">Metodologia</a>
+        <a href="login.html">Login</a>
+        <a href="turmas.html">Turmas</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="contato.html">Contato</a>             
     </nav>
 
     <!-- Conteudo da página-->
 
-    <div class="contat">
-      <section>
-        <!--Seção do formulário-->
-          
-            <form class="" method="get" action="">
-              <h2>Formulário de Contato</h2><br>
-              <div class="input-simples">
-                <label> Nome:</label>
-                 <input type="text" name="nome" required />
-              </div><br />
-               
+    <main class="content">
+      <div class="contat">
+        <section>
 
-              <div class="input-simples">
-                <label>E-mail:</label>
-              <input type="email" name="email" required />
-              </div><br />
-                
-              <div class="input-simples">  
-                <label> Assunto:</label>
-              <!--<input type="text" name="assunto"> -->
-                  <select name="assunto">
-                    <option value="Reclamação">Reclamação</option>
-                    <option value="Elogio" selected>Elogio</option>
-                    <option value="Sugestão">Sugestão</option>
-                    <option value="Dúvidas">Dúvidas</option></select>
+          <!--Seção do formulário-->
+            
+              <form class="" method="get" action="">
+                <h2>Formulário de Contato</h2><br>
+                <div class="input-simples">
+                  <label> Nome:</label>
+                  <input type="text" name="nome" required />
                 </div><br />
                 
-              <div class="input-simples">  
-                <label> Mensagem: </label>
-              <textarea name="mensagem"></textarea>
-              </div><br />
+
+                <div class="input-simples">
+                  <label>E-mail:</label>
+                <input type="email" name="email" required />
+                </div><br />
+                  
+                <div class="input-simples">  
+                  <label> Assunto:</label>
+                      <select name="assunto">
+                      <option value="Reclamação">Reclamação</option>
+                      <option value="Elogio" selected>Elogio</option>
+                      <option value="Sugestão">Sugestão</option>
+                      <option value="Dúvidas">Dúvidas</option></select>
+                  </div><br />
+                  
+                <div class="input-simples">  
+                  <label> Mensagem: </label>
+                <textarea name="mensagem"></textarea>
+                </div><br />
+                  
+                <div class="input-check">  
+                  <section class="check">
+                  <input type="checkbox" name="termo" required />
+                  <label> Ao enviar esta mensagem eu confirmo que li e concordo com a <a href="LGPD/Política de privacidade.pdf">Política de Privacidade.</a></label>
+                  </section><br />
                 
-              <div class="input-check">  
-                <section class="check">
-                <input type="checkbox" name="termo" required />
-                <label> Ao enviar esta mensagem eu confirmo que li e concordo com a <a href="LGPD/Política de privacidade.pdf">Política de Privacidade.</a></label>
-                </section><br />
-              
-                
-              </div>
-              <div class="btn"><input type="submit" value="Enviar Formulário" /></div>  
-            </form>
-      </section>
+                  
+                </div>
+                <div class="btn"><input type="submit" value="Enviar Formulário" /></div>  
+              </form>
+        </section>
+          
         
-      
-    </div>
+      </div>
+    </main>
 
     <!--Rodapé da página-->
 
