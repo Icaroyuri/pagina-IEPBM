@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title> Portal do Professor</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo-portal.css">
+    </head>
+    <body>
+        <div class="barra-lateral">
+            <h2>Portal do Professor</h2>
+            <a href="portal_inicio_professor.html">Início</a>
+            <a href="avisos.html">Enviar Avisos</a>
+            <a href="marcar_presenca_ou_falta.html">Marcar Assiduidade</a>
+            <a href="horarios_do_professor_dar_aula.html">Horários das tuas Aulas</a>
+            <a href="pontuar_aluno.html">Pontuar Alunos</a>
+            <a href="index.html">Sair</a>
+        </div>
+
+
+        <div class="topo">
+            <header>
+                <div class="alinhamento">
+                    <img src="imagens/logo IEBM - Editado.png" class="alinhamento-img">
+                    <div class="nome-escola">
+                        <h1>Instituto Educacinal Professora Bernadete Marinho</h1>
+                        <h2>Educação, Humanizada e Transformadora</h2>
+                    </div>
+                </div>
+                <div class="alinhamento-usuario">
+                    <img src="imagens/avatar.png" class="usuario-img">
+                    <div>
+                        <h4>Usuário</h4>
+                    </div>
+                </div>
+            </header>
+
+
+            <form action="" class="card">
+                <label for="escolher_series">Enviar aviso para a série:</label>
+                <select name="escolherseries" id="escolher_series" class="card-button">
+                    <option value="3°Ano Médio">3°Ano Médio</option>
+                    <option value="2°Ano Médio">2°Ano Médio</option>
+                    <option value="1°Ano Médio">1°Ano Médio</option>
+                    <option value="9°Ano">9°Ano</option>
+                    <option value="Mensagem para Todas" selected>Mensagem para Todas</option>
+                </select>
+                <label for="escolher_turma">da turma:</label>
+                <input type="checkbox" id="turm_a">
+                <label for="turm_a">A</label>
+                <input type="checkbox" id="turm_b">
+                <label for="turm_b">B</label>
+                </select><br>
+                <textarea name="mensagem" id="enviarmsg" class="card-button"></textarea><br>
+                <input type="submit" value="ENVIAR" class="card-button">
+                <input type="reset" value="APAGAR TUDO" class="card-button">
+            </form>
+        </div>
+    </body>
+</html>
